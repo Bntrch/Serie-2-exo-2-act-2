@@ -1,0 +1,10 @@
+# Serie-2-exo-2-act-2
+def facteurs_mot(mot):
+    facteurs = []
+    for i in range (len(mot)):
+        for j in range (i+1,len(mot)+1):
+            facteurs.append(mot[i:j])
+    return facteurs
+mot = input("Entrez un mot :")
+facteurs= facteurs_mot(mot)
+print("",mot,facteurs)
